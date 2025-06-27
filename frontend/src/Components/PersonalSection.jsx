@@ -69,7 +69,7 @@ const PersonalSection = (props) => {
 
         const delayDebounce = setTimeout(() => {
             // 🔁 Simulate API call here
-            fetch(`http://localhost:4000/api/check-username?username=${username}`)
+            fetch(`https://frequent-research-solutions-task.onrender.com/api/check-username?username=${username}`)
                 .then((res) => res.json())
                 .then((data) => {
                     setIsAvailable(data.exists === false);

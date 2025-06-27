@@ -28,7 +28,7 @@ const ProfileSection = (props) => {
         const formData = new FormData();
         formData.append("image", file);
 
-        const res = await fetch("http://localhost:4000/api/upload", {
+        const res = await fetch("https://frequent-research-solutions-task.onrender.com/api/upload", {
             method: "POST",
             body: formData,
         });
