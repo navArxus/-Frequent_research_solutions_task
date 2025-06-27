@@ -56,7 +56,7 @@ const PersonalSection = (props) => {
 
             e.preventDefault();
             if (validate()) {
-                alert("Form is valid! Submitting...");
+                // alert("Form is valid! Submitting...");
                 props.updateFormData({ username, password, image: pic })
                 props.submitReq(2);
                 // submit logic

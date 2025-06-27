@@ -11,7 +11,7 @@ dotenv.config();
 const app = express();
 app.use(express.json());
 app.use(cors({
-    origin: ["https://frequent-research-solutions-task.vercel.app/", "http://localhost:3000"], // your React frontend
+    origin: ["https://frequent-research-solutions-task.vercel.app", "http://localhost:3000"], // your React frontend
     methods: ["GET", "POST"],
     credentials: true, // if using cookies or authentication
 }));

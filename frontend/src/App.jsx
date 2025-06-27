@@ -40,8 +40,11 @@ function App() {
       body: JSON.stringify(formData),
     });
     const result = await res.json();
-    console.log(result)
-    console.log("Final Submitted Data:", formData)
+    if(result.message == "Profile saved"){
+      alert("Profile saved successfully");
+    }else {
+      alert("Some problem occured")
+    }
     // Optionally: send to backend or show success page
   }
 

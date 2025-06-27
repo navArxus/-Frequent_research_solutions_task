@@ -36,7 +36,7 @@ const ProfessionalSections = (props) => {
     const handleSubmit = (e) => {
         e.preventDefault();
         if (validate()) {
-            alert("Profession Details Validated Successfully");
+            // alert("Profession Details Validated Successfully");
             // handle save
             props.updateFormData({profession:profession , companyName:companyName,address:address})
             props.submitReq(3);
